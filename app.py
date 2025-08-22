@@ -1,8 +1,8 @@
 # app.py  – Step 1
 import streamlit as st                # Streamlit turns Python into a web app
 
-st.title("Pre-Game Panic Protocol Chatbot")      # Big heading
-st.write("Ask me anything about our pre-game panic protocols!")  # intro text
+st.title("Mental Warmup Chatbot")      # Big heading
+st.write("Let's build a mental warmup!")  # intro text
 
 # --- Set up session state for chat history ---
 if "history" not in st.session_state:
@@ -29,7 +29,7 @@ pc = Pinecone(
     api_key=os.getenv("PINECONE_API_KEY"),
     environment=os.getenv("PINECONE_ENVIRONMENT")
 )
-INDEX_NAME = "business-embeddings"
+INDEX_NAME = "mental-warmup-bot"
 
 # 2️⃣  Set up embeddings + vector store
 embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
