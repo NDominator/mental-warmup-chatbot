@@ -29,7 +29,7 @@ pc = Pinecone(
     api_key=os.getenv("PINECONE_API_KEY"),
     environment=os.getenv("PINECONE_ENVIRONMENT")
 )
-INDEX_NAME = "mental-warmup-bot"
+INDEX_NAME = "business-embeddings"
 
 # 2️⃣  Set up embeddings + vector store
 embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
