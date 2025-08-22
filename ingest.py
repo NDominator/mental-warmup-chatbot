@@ -45,7 +45,7 @@ pc = Pinecone(
     environment=os.getenv("PINECONE_ENVIRONMENT")
 )
 
-INDEX_NAME = "business-embeddings"
+INDEX_NAME = "mental-warmup-bot"
 EMBED_DIM  = 1536
 
 if INDEX_NAME not in pc.list_indexes():
